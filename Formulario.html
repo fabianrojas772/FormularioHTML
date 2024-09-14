@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="stylesform.css">
+</head>
+
+
+<header>
+    <h1>
+    Ingrese sus Datos
+    </h1>
+</header>
+<br>
+<body>
+
+    <main>
+        <section>
+            <ul>
+                
+                <div>
+                    <form action="Inicio.html" method="get" enctype="multipart/form-data">
+                    <div><label for="Nombre">Nombre</label></div>
+                    <input type="text" id="Nombre" placeholder="ingrese su nombre" min="4" max="10"  pattern="[a-zA-Z]+" required>   
+                </div>
+            <br>
+                <hr> 
+            <br>
+                <div>
+                    <div><label for="apellido">Apellido</label></div>
+                    <input type="text" id="apellido" placeholder="ingrese su apellido" pattern="[a-z]+" required>
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div> <label for="color">Color</label> </div>
+                    <input type="color" id="Color">
+                </div> 
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Edad">Edad</label></div>
+                    <input type="number" id="Edad" placeholder="introducir Edad">
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Numeros">Numeros</label></div>
+                    <input type="text" id="Numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Positivos">Numeros (Positivos)</label></div>
+                    <input type="number" placeholder="introducir numeros positivos" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                </div>
+                
+
+                
+                <button>Enviar</button>
+                
+            </ul>
+        </section>
+                    </form> 
+    </main>
+</body>
+</html>
