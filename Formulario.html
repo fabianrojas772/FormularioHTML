@@ -21,7 +21,7 @@
             <ul>
                 
                 <div>
-                    <form action="Inicio.html" method="get" enctype="multipart/form-data">
+                    <form action="" method="get" enctype="multipart/form-data">
                     <div><label for="Nombre">Nombre</label></div>
                     <input type="text" id="Nombre" placeholder="ingrese su nombre" min="4" max="10"  pattern="[a-zA-Z]+" required>   
                 </div>
@@ -60,14 +60,61 @@
                     <div><label for="Positivos">Numeros (Positivos)</label></div>
                     <input type="number" placeholder="introducir numeros positivos" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
                 </div>
-                
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Sexo">Genero</label></div>
+                    <select name="Genero" id="Sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Prefiero no decirlo</option>
+                    </select>
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Materias">Materias(opcional)</label></div>
+                    <select name="Programas" id="Materias">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JS">JS</option>
+                        <option value="JAVA">JAVA</option>
+                        <option value="PYTHON">PYTHON</option>
+                        <option value="PHP">PHP</option>
+                    </select>
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="Archivos">Insertar Archivos</label></div>
+                    <input type="file" id="Archivos" name="archivo" accept=".jpg, .png">
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="password">Contraseña</label></div>
+                    <input type="password" id="password" placeholder="contraseña" required>
+                </div>
+            <br>
+                <hr>
+            <br>
+                <div>
+                    <div><label for="nombre">Nombre Aprendiz Sena</label></div>
+                    <input type="text" id="nombre" name="nombre" value="Fabian Yesid Gonzalez Rojas" readonly>
+                </div>
 
+            <br><br>
                 
-                <button>Enviar</button>
-                
+                <div>
+                    <input type="submit" value="Enviar" id="Submit">
+                </div>
             </ul>
         </section>
-                    </form> 
+            </form> 
     </main>
 </body>
 </html>
