@@ -30,7 +30,7 @@
             <br>
                 <div>
                     <div><label for="apellido">Apellido</label></div>
-                    <input type="text" id="apellido" placeholder="ingrese su apellido" pattern="[a-z]+" required>
+                    <input type="text" id="apellido" placeholder="ingrese su apellido" min="4" max="10" pattern="[a-z]+" required>
                 </div>
             <br>
                 <hr>
@@ -44,14 +44,14 @@
             <br>
                 <div>
                     <div><label for="Edad">Edad</label></div>
-                    <input type="number" id="Edad" placeholder="introducir Edad">
+                    <input type="number" id="Edad" placeholder="introducir Edad" min="4" max="10">
                 </div>
             <br>
                 <hr>
             <br>
                 <div>
                     <div><label for="Numeros">Numeros</label></div>
-                    <input type="text" id="Numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                    <input type="text" id="Numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required min="4" max="10">
                 </div>
             <br>
                 <hr>
@@ -90,7 +90,7 @@
             <br>
                 <div>
                     <div><label for="Archivos">Insertar Archivos</label></div>
-                    <input type="file" id="Archivos" name="archivo" accept=".jpg, .png">
+                    <input type="file" id="Archivos" name="archivo" accept=".jpg, .png" required>
                 </div>
             <br>
                 <hr>
